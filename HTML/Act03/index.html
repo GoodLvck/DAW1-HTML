@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+
+        #t3 td{
+            width: 75px;
+            height: 75px;
+            text-align: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1><u>Tablas</u></h1>
+
+    <h2>Alumnos</h2>
+    <table>
+        <tr>
+            <th colspan="100%">tAlumnos</th>
+        </tr>
+        <tr>
+            <th>cDNI</th>
+            <th>cNombre</th>
+            <th>cApellido1</th>
+            <th>cApellido2</th>
+            <th>cEdad</th>
+            <th>cModulo</th>
+            <th>cCurso</th>
+        </tr>
+        <tr>
+            <td>48165423J</td>
+            <td>Albert</td>
+            <td>Jounou</td>
+            <td>Martí</td>
+            <td>22</td>
+            <td>DAM</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>81856321G</td>
+            <td>Oriol</td>
+            <td>Dalmau</td>
+            <td>Peiró</td>
+            <td>23</td>
+            <td>DAW</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>22376590H</td>
+            <td>Jan</td>
+            <td>Pomerol</td>
+            <td>Montcada</td>
+            <td>20</td>
+            <td>GEAD</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>99746571A</td>
+            <td>Pol</td>
+            <td>Pererol</td>
+            <td>Montalbà</td>
+            <td>16</td>
+            <td>SMX</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>34872538Z</td>
+            <td>Bernat</td>
+            <td>Bosch</td>
+            <td>Soler</td>
+            <td>15</td>
+            <td>ESO</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>23498718G</td>
+            <td>Guifré</td>
+            <td>Martí</td>
+            <td>Galí</td>
+            <td>25</td>
+            <td>DAM</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Traducciones Shakespeare</h2>
+    <table>
+        <tr>
+            <th colspan="100%">tTraducciones</th>
+        </tr>
+        <tr>
+            <th>cID</th>
+            <th>cTituloObra</th>
+            <th>cTituloOriginal</th>
+            <th>cTraductor</th>
+            <th>cAñoTraduccion</th>
+        </tr>
+
+        <!-- Datos 1 -->
+        <tr>
+            <td rowspan="2">O01</td>
+            <td rowspan="2">Les alegres casades de Windsor</td>
+            <td rowspan="2">The Merry Wives of Winsor</td>
+            <td>Josep Carner</td>
+            <td>1930</td>
+        </tr>
+        <tr>
+            <td>Josep M. de Sagarra</td>
+            <td>1942</td>
+        </tr>
+
+        <!-- Datos 2 -->
+        <tr>
+            <td rowspan="2">O02</td>
+            <td rowspan="2">La comèdia dels errors</td>
+            <td rowspan="2">The Comedy of Errors</td>
+            <td>Josep M. de Sagarra</td>
+            <td>1947</td>
+        </tr>
+        <tr>
+            <td>Salvador Oliva</td>
+            <td>1985</td>
+        </tr>
+
+        <!-- Datos 3 -->
+        <tr>
+            <td rowspan="4">O01</td>
+            <td rowspan="4">Molt soroll per no res</td>
+            <td rowspan="4">Much Ado About Nothing</td>
+            <td>Josep Lleonart</td>
+            <td>1925</td>
+        </tr>
+        <tr>
+            <td>Salvador Vilaregut</td>
+            <td>1929</td>
+        </tr>
+        <tr>
+            <td>Josep M. de Sagarra</td>
+            <td>1945</td>
+        </tr>
+        <tr>
+            <td>Salvador Oliva</td>
+            <td>1991</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Contenido no regular</h2>
+    <table id="t3">
+        <tr>
+            <td rowspan="2" colspan="2">contenido</td>
+            <td>contenido</td>
+            <td>contenido</td>
+            <td rowspan="2">contenido</td>
+        </tr>
+        <tr>
+            <td>contenido</td>
+            <td>contenido</td>
+        </tr>
+        <tr>
+            <td>contenido</td>
+            <td>contenido</td>
+            <td rowspan="3">contenido</td>
+            <td>contenido</td>
+            <td>contenido</td>
+        </tr>
+        <tr>
+            <td>contenido</td>
+            <td>contenido</td>
+            <td rowspan="2">contenido</td>
+            <td>contenido</td>
+        </tr>
+        <tr>
+            <td>contenido</td>
+            <td>contenido</td>
+            <td>contenido</td>
+        </tr>
+    </table>
+
+</body>
+</html>
